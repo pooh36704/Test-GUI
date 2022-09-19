@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="43,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Text="ราย"/><Run Language="th-th" Text="จ่าย"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="43,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Language="th-th" Text="ราคาของที่อยากได้"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="442,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Language="th-th" Text="บาท/วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="442,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Language="th-th" Text="บาท/วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="442,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Language="th-th" Text="บาท"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="43,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Language="th-th" Text="ราบรับ"/></TextBlock>
+        <TextBox x:Name="inCome" HorizontalAlignment="Left" Height="33" Margin="190,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="exPenses" HorizontalAlignment="Left" Height="33" Margin="190,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="tarGet" HorizontalAlignment="Left" Height="33" Margin="190,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Button Content="คำนวณ" HorizontalAlignment="Left" Height="28" Margin="217,227,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="43,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Language="th-th" Text="ต้องใช้เวลา"/><LineBreak/><Run Language="th-th"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="447,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"><Run Language="th-th" Text="วัน"/></TextBlock>
+        <TextBox x:Name="toTal" HorizontalAlignment="Left" Height="33" Margin="190,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
